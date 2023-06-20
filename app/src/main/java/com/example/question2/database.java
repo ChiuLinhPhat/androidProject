@@ -81,13 +81,11 @@ public class database extends SQLiteOpenHelper {
         ArrayList<Friend> list = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from Friend", null);
-        String[] fromcolums = {"name"};
-        int[]toView = {R.id.name_edittext};
-        SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,R.layout.);
         if (cursor != null) ;
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            list.add(new Friend( cursor.getString(1)));
+            list.add(new Friend(cursor.getInt(0), cursor.getString(1),
+                    cursor.getString(2), cursor.getString(3)));
             cursor.moveToNext();
         }
         cursor.close();

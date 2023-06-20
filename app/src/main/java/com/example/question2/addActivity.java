@@ -24,7 +24,7 @@ public class addActivity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Friend friendContruct = new Friend(cursor.getString(1));
+                Friend friendContruct = new Friend();
                 friendContruct.setName(editTextName.getText().toString());
                 friendContruct.setPhoneNumber(String.valueOf(Integer.parseInt(editTextPhone.getText().toString())));
                 friendContruct.setAddress(editTextAddress.getText().toString());

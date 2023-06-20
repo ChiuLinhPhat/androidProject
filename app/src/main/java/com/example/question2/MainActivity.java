@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 // Populate the names ArrayList with data from the database
 
         nameAdapter adapter = new nameAdapter(this, names);
-
         lv_friend.setAdapter(adapter);
     }
 
