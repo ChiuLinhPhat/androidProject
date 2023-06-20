@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".addActivity">
+        <TextView
+            android:id="@+id/add_contact_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Contact"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_contact_text"
+            android:layout_margin="16dp"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/phone_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_edittext"
+            android:layout_margin="16dp"
+            android:inputType="phone"
+            android:hint="Phone"/>
+
+        <EditText
+            android:id="@+id/address_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_edittext"
+            android:layout_margin="16dp"
+            android:hint="Home Address"/>
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_edittext"
+            android:layout_centerHorizontal="true"
+            android:text="Add"/>
+</RelativeLayout>

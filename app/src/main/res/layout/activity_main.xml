@@ -19,7 +19,7 @@
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/ed_friendname"
-            android:layout_width="330dp"
+            android:layout_width="300dp"
             android:layout_height="40dp"
             android:hint="Search name"
         />

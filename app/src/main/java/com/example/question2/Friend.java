@@ -6,7 +6,7 @@ public class Friend {
     private String address;
     private String phoneNumber;
 
-    public Friend(String name, int id, String address, String phoneNumber) {
+    public Friend(String string) {
         this.id = id;
         this.name = name;
         this.address = address;
